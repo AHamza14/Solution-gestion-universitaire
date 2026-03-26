@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SolutionGestionUniversitaire.Core\SolutionGestionUniversitaire.Core.csproj" />
+    <ProjectReference Include="..\SolutionGestionUniversitaire.Infrastructure\SolutionGestionUniversitaire.Infrastructure.csproj" />
+    <ProjectReference Include="..\SolutionGestionUniversitaire.SharedKernel\SolutionGestionUniversitaire.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>

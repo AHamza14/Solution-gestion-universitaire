@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="SolutionGestionUniversitaire.ConsoleTestApp/SolutionGestionUniversitaire.ConsoleTestApp.csproj" />
+  <Project Path="SolutionGestionUniversitaire.Core/SolutionGestionUniversitaire.Core.csproj" />
+  <Project Path="SolutionGestionUniversitaire.Infrastructure/SolutionGestionUniversitaire.Infrastructure.csproj" />
+  <Project Path="SolutionGestionUniversitaire.SharedKernel/SolutionGestionUniversitaire.SharedKernel.csproj" />
+  <Project Path="SolutionGestionUniversitaire.WebAPI/SolutionGestionUniversitaire.WebAPI.csproj" />
+  <Project Path="SolutionGestionUniversitaire.WindowsApp/SolutionGestionUniversitaire.WindowsApp.csproj" />
+</Solution>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SolutionGestionUniversitaire.Core\SolutionGestionUniversitaire.Core.csproj" />
+    <ProjectReference Include="..\SolutionGestionUniversitaire.Infrastructure\SolutionGestionUniversitaire.Infrastructure.csproj" />
+    <ProjectReference Include="..\SolutionGestionUniversitaire.SharedKernel\SolutionGestionUniversitaire.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>

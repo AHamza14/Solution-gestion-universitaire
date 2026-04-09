@@ -12,13 +12,17 @@ using SolutionGestionUniversitaire.SharedKernel.Interfaces;
 
 //await Test3("ahmed");
 
-await Test4("Kamal", "Math");
+// await Test4("Kamal", "Math");
+
+
+
 static async Task Test4(string nom, string departement)
 {
     using (SolutionGestionUniversitaireContext context = new SolutionGestionUniversitaireContext())
     {
         IProfesseurRepository profRepository = new ProfesseurRepository(context);
-        IGestionUniversitaireService service = new GestionUniversitaireService(profRepository);
+        IEtudiantRepository etudiantRepository = new EtudiantRepository(context);
+        IGestionUniversitaireService service = new GestionUniversitaireService(profRepository, etudiantRepository);
         Professeur prof = new Professeur(nom, departement);
         await service.AddProfesseur(prof);
     }

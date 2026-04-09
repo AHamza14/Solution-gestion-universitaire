@@ -13,6 +13,8 @@ namespace SolutionGestionUniversitaire.Core.Entities
             Titre = titre;
         }
 
+        public virtual List<Inscription> Inscriptions { get; private set; } = new List<Inscription>();
+
         public string Titre { get; set; }
     }
 }

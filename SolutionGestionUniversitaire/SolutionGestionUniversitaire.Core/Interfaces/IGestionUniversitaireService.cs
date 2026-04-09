@@ -11,5 +11,13 @@ namespace SolutionGestionUniversitaire.Core.Interfaces
         Task UpdateProfesseur(Professeur prof);
         Task DeleteProfesseur(Professeur prof);
 
+        // Etudiant
+        Task AddEtudiant(Etudiant etudiant);
+        Task UpdateEtudiant(Etudiant etudiant);
+        Task DeleteEtudiant(Etudiant etudiant);
+
+        // Inscription (many-to-many)
+        Task InscrireEtudiantACours(int etudiantId, int coursId);
+        Task DesinscrireEtudiantDeCours(int etudiantId, int coursId);
     }
 }

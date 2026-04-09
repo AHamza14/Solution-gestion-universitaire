@@ -24,6 +24,7 @@ namespace SolutionGestionUniversitaire.WindowsApp
                   services.AddSingleton<AjouterProfForm>();
                   services.AddLogging(configure => configure.AddConsole());
                   services.AddScoped<IProfesseurRepository, ProfesseurRepository>();
+                  services.AddScoped<IEtudiantRepository, EtudiantRepository>();
                   services.AddScoped<IGestionUniversitaireService, GestionUniversitaireService>();
 
               });

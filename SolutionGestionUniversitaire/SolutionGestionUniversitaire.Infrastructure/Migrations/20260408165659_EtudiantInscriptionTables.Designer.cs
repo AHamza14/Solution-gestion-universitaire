@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SolutionGestionUniversitaire.Infrastructure;
 
@@ -11,9 +12,11 @@ using SolutionGestionUniversitaire.Infrastructure;
 namespace SolutionGestionUniversitaire.Infrastructure.Migrations
 {
     [DbContext(typeof(SolutionGestionUniversitaireContext))]
-    partial class SolutionGestionUniversitaireContextModelSnapshot : ModelSnapshot
+    [Migration("20260408165659_EtudiantInscriptionTables")]
+    partial class EtudiantInscriptionTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
